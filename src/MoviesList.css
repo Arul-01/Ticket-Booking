@@ -1,0 +1,13 @@
+
+.image{
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+}
+.link{
+  text-decoration: none;
+  color: black;
+}
+.card{
+  height:100%
+}
