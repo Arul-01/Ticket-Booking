@@ -24,9 +24,7 @@ function MoviesList() {
           <>
           <div key={product._id}  className="col-12 col-md-4 col-lg-3 mb-4">
            <div className="card">
-            <Link to={`/Movies/${product._id}`} className="link"> 
-          
-             
+            <Link to={`/Movies/${product._id}`} className="link">    
                 <img src={product.image} alt={product.name} className="image card-img-top" />
                 <div className="card-body">
                 <h3>{product.name}</h3>

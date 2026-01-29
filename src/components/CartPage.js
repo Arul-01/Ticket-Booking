@@ -20,21 +20,22 @@ export default function CartPage() {
           <p>Price: ₹{item.ticketprice}</p>
          
 
-          <button
-            onClick={() => increaseQty(item._id)}
-            className="btn btn-success btn-sm me-2"
-          >
-            +
-          </button>
-          
-          <span>Quantity: {item.quantity}</span>
-          
-          <button
+         <button
             onClick={() => decreaseQty(item._id)}
             className="btn btn-warning btn-sm me-2"
           >
             -
           </button>
+          
+          <span>Quantity: {item.quantity}</span>
+          
+          <button
+            onClick={() => increaseQty(item._id)}
+            className="btn btn-success btn-sm me-2"
+          >
+            +
+          </button> 
+          
           <button
             onClick={() => removeItem(item._id)}
             className="btn btn-danger btn-sm"
