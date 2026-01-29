@@ -10,8 +10,9 @@ export const CartProvider = ({ children }) => {
   const addToCart = (product) => {
     const exists = cart.find((item) => item._id === product._id);
     if (exists) {
-      alert("This product is already in the cart!");
+      alert("This Movie is already in the cart!");
     } else {
+      alert("Movie added to cart");
       setCart([...cart, { ...product, quantity: 1 }]);
     }
   };
